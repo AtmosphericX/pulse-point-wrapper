@@ -1,12 +1,12 @@
 {
-	"name": "atmosx-pulse-point",
+	"name": "@atmosx/pulse-point-wrapper",
 	"version": "1.0.37",
 	"description": "AtmosphericX PulsePoint - Built for standalone and Project AtmosphericX Integration.",
 	"main": "dist/cjs/index.cjs",
 	"module": "dist/esm/index.mjs",
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/AtmosphericX/atmosx-pulse-point.git",
+		"url": "git+https://github.com/AtmosphericX/pulse-point-wrapper.git",
 		"branch": "main"
 	},
 	"scripts": {
@@ -28,9 +28,9 @@
 	"author": "k3yomi, StarflightWx, CJ Ziegler",
 	"license": "MIT",
 	"bugs": {
-		"url": "https://github.com/AtmosphericX/atmosx-pulse-point/issues"
+		"url": "https://github.com/AtmosphericX/pulse-point-wrapper/issues"
 	},
-	"homepage": "https://github.com/AtmosphericX/atmosx-pulse-point#readme",
+	"homepage": "https://github.com/AtmosphericX/pulse-point-wrapper#readme",
 	"dependencies": {
 		"axios": "1.13.4",
 		"croner": "10.0.1",

@@ -1,4 +1,4 @@
-const {PulsePoint} = require(`atmosx-pulse-point`);
+const {PulsePoint} = require(`@atmosx/pulse-point-wrapper`);
 
 const pulse = new PulsePoint({
     key: 'password_1234567890',

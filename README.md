@@ -4,23 +4,23 @@
   	<p align = "center">PulsePoint is a public emergency response system used by fire departments, EMS agencies, and dispatch centers to share live incident information with the public. This module provides a way to poll and decrypt the data provided by PulsePoint. Please keep in mind that this module is unofficial and not endorsed by PulsePoint or its parent organization. This module is primarily intended for use with the https://github.com/k3yomi/AtmosphericX project.</small></p>
   	<p align = "center">Documentation written by @k3yomi</p>
 	<div align="center" style="border: none;">
-		<img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/k3yomi/atmosx-pulse-point">
-		<img alt="GitHub forks" src="https://img.shields.io/github/forks/k3yomi/atmosx-pulse-point">
-		<img alt="GitHub issues" src="https://img.shields.io/github/issues/k3yomi/atmosx-pulse-point">
-		<img alt="GitHub pull requests" src="https://img.shields.io/github/issues-pr/k3yomi/atmosx-pulse-point">
+		<img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/AtmosphericX/pulse-point-wrapper">
+		<img alt="GitHub forks" src="https://img.shields.io/github/forks/AtmosphericX/pulse-point-wrapper">
+		<img alt="GitHub issues" src="https://img.shields.io/github/issues/AtmosphericX/pulse-point-wrapper">
+		<img alt="GitHub pull requests" src="https://img.shields.io/github/issues-pr/AtmosphericX/pulse-point-wrapper">
 	</div>
 </div>
 
 
 ## Installation (NPM)
 ```bash
-npm install atmosx-pulse-point
+npm install @atmosx/pulse-point-wrapper
 ```
 
 ## Example Usage
 ```js
-const { PulsePoint } = require(`atmosx-pulse-point`); // CJS
-import { PulsePoint } from `atmosx-pulse-point`; // ESM
+const { PulsePoint } = require(`@atmosx/pulse-point-wrapper`); // CJS
+import { PulsePoint } from `@atmosx/pulse-point-wrapper`; // ESM
 
 const pulse = new PulsePoint({
     key: `YOUR_PASSWORD_KEY_FOR_DECRYPTION`, // Not provided by PulsePoint, you must obtain this key yourself.
