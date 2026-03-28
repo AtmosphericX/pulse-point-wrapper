@@ -1,13 +1,13 @@
 {
 	"name": "atmosx-pulse-point",
-	"version": "1.0.36",
+	"version": "1.0.37",
 	"description": "AtmosphericX PulsePoint - Built for standalone and Project AtmosphericX Integration.",
 	"main": "dist/cjs/index.cjs",
 	"module": "dist/esm/index.mjs",
 	"repository": {
 		"type": "git",
 		"url": "git+https://github.com/AtmosphericX/atmosx-pulse-point.git",
-		"branch": "beta"
+		"branch": "main"
 	},
 	"scripts": {
 		"start": "cd ./test && node ./index.js",
