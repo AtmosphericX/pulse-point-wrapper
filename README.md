@@ -108,8 +108,15 @@ pulse.stop();
 ```
 
 ## References
-- [AtmosphericX](https://github.com/k3yomi/AtmosphericX)
-- [PulsePoint Official Website](https://www.pulsepoint.org/)
+[PulsePoint](https://www.pulsepoint.org/) |
+[Documentation](https://atmosphericx.scriptkitty.cafe/documentation) |
+[Discord Server](https://atmosphericx-discord.scriptkitty.cafe) |
+[Project Board](https://github.com/users/AtmosphericX/projects/2) |\
+[Code of Conduct](/CODE_OF_CONDUCT.md) |
+[Contributing](/CONTRIBUTING.md) |
+[License](/LICENSE) | 
+[Security](/SECURITY.md) | 
+[Changelogs](/CHANGELOGS.md) |
 
 ## Acknowledgements
 - [CJ Ziegler](https://www.youtube.com/channel/UCx_mcHxMvZ8PBmVTtg6Ddtw)
