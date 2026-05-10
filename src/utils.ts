@@ -62,7 +62,7 @@ export class Utils {
      * @param {types.HTTPSettings} [options]
      * @returns {Promise<{ error: boolean; message: T | string }>}
      */
-    public static async createHttpRequest<T = unknown>(url: string, options?: types.HTTPSettings): Promise<{ error: boolean; message: T | string }> {
+    public static async createHttpRequest<T = unknown>(url: string, options?: types.HTTPSettings): Promise<{ error: boolean; message: T | string }> {   
         const defaultOptions = { 
             timeout: 10000,
             headers: { 
@@ -77,13 +77,20 @@ export class Utils {
             headers: { ...defaultOptions.headers, ...(options?.headers ?? {}) }
         };
         try {
-            const resp = await loader.packages.axios.get<T>(url, {
+            const controller = new AbortController();
+            const timeoutId = setTimeout(() => controller.abort(), requestOptions.timeout);
+            const resp = await fetch(url, {
                 headers: requestOptions.headers,
-                timeout: requestOptions.timeout,
-                maxRedirects: 0,
-                validateStatus: (status) => status === 200 || status === 500
+                signal: controller.signal,
+                redirect: 'manual'
             });
-            return { error: false, message: resp.data };
+            clearTimeout(timeoutId);
+            if (resp.status !== 200 && resp.status !== 500) {
+                throw new Error(`HTTP Error: ${resp.status}`);
+            }
+            
+            const data = await resp.json() as T;
+            return { error: false, message: data };
         } catch (err: unknown) {
             const msg = err instanceof Error ? err.message : String(err);
             return { error: true, message: msg };

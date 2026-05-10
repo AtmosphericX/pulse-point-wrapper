@@ -16,7 +16,6 @@ import * as fs from 'fs';
 import * as path from 'path';
 import * as events from 'events';
 import * as jobs from 'croner';
-import axios from 'axios';
 import crypto from 'crypto-js';
 import os from 'os';
 
@@ -27,7 +26,6 @@ export const packages = {
     path, 
     events, 
     jobs, 
-    axios, 
     crypto, 
     os, 
 };
