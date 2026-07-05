@@ -264,9 +264,11 @@ var Utils = class {
       const defaultOptions = {
         timeout: 1e4,
         headers: {
-          "User-Agent": "AtmosphericX",
           "Accept": "application/geo+json, text/plain, */*; q=0.9",
-          "Accept-Language": "en-US,en;q=0.9"
+          "Accept-Language": "en-US,en;q=0.9",
+          "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome",
+          "Origin": "https://web.pulsepoint.org/",
+          "Referer": "https://web.pulsepoint.org/"
         }
       };
       const requestOptions = __spreadProps(__spreadValues(__spreadValues({}, defaultOptions), options), {
